@@ -1,6 +1,6 @@
 
 const express = require('express');
-
+require('dotenv').config();
 const app = express();
 const bodyParser = require('body-parser');
 const sessionMiddleware = require('./modules/session-middleware');
@@ -10,6 +10,7 @@ const passport = require('./strategies/user.strategy');
 // Route includes
 const userRouter = require('./routes/user.router');
 const secretsRouter = require('./routes/secrets.router');
+
 
 
 // Body parser middleware

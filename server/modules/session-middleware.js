@@ -23,7 +23,7 @@ const serverSessionSecret = () => {
     console.log(warnings.badSecret);
   }
 
-  // return process.env.SERVER_SESSION_SECRET;
+  return process.env.SERVER_SESSION_SECRET;
   return '902384uroiwefaj9oq238u9or3ijwefl8u49rw8uefijljwuei';
 };
 
